@@ -24,14 +24,14 @@ def display(text, delay_before=0, delay_after=0, char_speed=0.05, color="cyan"):
 
 
 lyrics = [
-    ("Em là ai từ đâu bước", 0.2, 1.48, 0.08, "red"),
-    ("Đến nơi đây dịu dàng chân phương", 0.1, 1.42, 0.07, "cyan"),
-    ("Em là ai tựa như ánh nắng", 0.1, 0.68, 0.08, "red"),
-    ("Ban mai ngọt ngào trong sương", 0.2, 2.3, 0.07, "cyan"),
-    ("Ngắm em thật lâu", 0.1, 0.84, 0.08, "red"),
-    ("Con tim anh yếu mềm", 0.1, 2.3, 0.07, "cyan"),
-    ("Đắm say từ phút đó", 0.1, 1.46, 0.08, "red"),
-    ("Từng giây trôi yêu thêm", 0.1, 1.05, 0.08, "cyan"),
+    ("Em là ai từ đâu bước đến", 3.5, 0, 0.1, "red"),
+    ("Nơi đây dịu dàng chân phương", 0.0, 0, 0.1, "cyan"),
+    ("Em là ai tựa như ánh nắng", 0.8, 0.4, 0.08, "red"),
+    ("Ban mai ngọt ngào trong sương", 0.2, 1.4, 0.07, "cyan"),
+    ("Ngắm em thật lâu", 0.1, 0.8, 0.14, "red"),
+    ("Con tim anh yếu mềm", 0.2, 1.3, 0.08, "cyan"),
+    ("Đắm say từ phút đó", 0.1, 0.7, 0.08, "red"),
+    ("Từng giây trôi yêu thêm...", 0.1, 1.1, 0.08, "cyan"),
 ]
 
 
@@ -40,7 +40,7 @@ def main():
 
     try:
         # Hiển thị tiêu đề
-        display("🎵 NƠI NÀY CÓ ANH 🎵")
+        display("  ")
         print()
 
         for line in lyrics:
