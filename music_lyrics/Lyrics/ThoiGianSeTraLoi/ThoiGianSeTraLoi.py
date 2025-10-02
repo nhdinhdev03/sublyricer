@@ -13,8 +13,7 @@ def color_text(text, color="cyan"):
     return COLORS.get(color, COLORS["cyan"]) + text + COLORS["reset"]
 
 
-def display(text, delay_before=0, delay_after=0, char_speed=0.05, color="cyan"):
-    time.sleep(delay_before)
+def display(text, delay_after=0, char_speed=0.05, color="cyan"):
     for char in text:
         sys.stdout.write(color_text(char, color))
         sys.stdout.flush()
@@ -24,16 +23,16 @@ def display(text, delay_before=0, delay_after=0, char_speed=0.05, color="cyan"):
 
 
 lyrics = [
-    ("Nơi đâu cho em thật sự yên lành", 0, 0, 0.1, "red"),
-    ("Và ai đó mang em đi xa dần lắng nghe tim anh đôi lần", 0.0, 0, 0.1, "cyan"),
-    ("Xót xa khi em không cần mình gần bên nhau", 0, 1.4, 0.07, "red"),
-    ("Vì thời gian sẽ không trôi êm đềm giống như khi đôi môi mềm", 0.1, 0.8, 0.14, "cyan"),
-    ("Còn ấm đam mê như ban đầu để miền yêu thương khép lại", 0, 0.7, 0.08, "red"),
-    ("Uhhh anh đã cố nói em khi bên anh chỉ là mộng ước", 0, 0.8, 0.06, "cyan"),
-    ("Nguội lạnh theo hơi ấm nhạt màu", 0, 0.5, 0.08, "red"),
-    ("(Lạnh theo hơi ấm nhạt màu)", 0, 0.3, 0.08, "cyan"),
-    ("Nguội lạnh theo hơi ấm nhạt màu", 0, 0.5, 0.08, "red"),
-    ("(eh y-yeh y-yeh huh)", 0, 1.0, 0.1, "cyan"),
+    ("Nơi đâu cho em thật sự yên lành", 0.7, 0.05, "red"),
+    ("Và ai đó mang em đi xa dần lắng nghe tim anh đôi lần", 0.6, 0.07, "cyan"),
+    ("Xót xa khi em không cần mình gần bên nhau", 0.3, 0.06, "red"),
+    ("Vì thời gian sẽ không trôi êm đềm giống như khi đôi môi mềm", 0.3, 0.07, "cyan"),
+    ("Còn ấm đam mê như ban đầu để miền yêu thương khép lại", 0.1, 0.06, "red"),
+    ("Uhhh anh đã cố nói em khi bên anh chỉ là mộng ước", 0.4, 0.09, "cyan"),
+    ("Nguội lạnh theo hơi ấm nhạt màu", 0.3, 0.07, "red"),
+    ("(Lạnh theo hơi ấm nhạt màu)", 0.2, 0.04, "cyan"),
+    ("Nguội lạnh theo hơi ấm nhạt màu", 0.3, 0.05, "red"),
+    ("(eh y-yeh y-yeh huh)", 0.3, 0.06, "cyan"),
 ]
 
 
@@ -47,7 +46,7 @@ def main():
 
         for line in lyrics:
             display(*line)
-        print("\n🎵 Hoàn thành! ")
+        print("\nHoàn thành! ")
     except KeyboardInterrupt:
         print("\n\nDừng phát!")
 
