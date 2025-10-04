@@ -27,8 +27,8 @@ def display(text, delay_after=0, char_speed=0.05, color="blue"):
 
 
 lyrics = [
-    ("Your morning eyes", 0.7, 0.05, "blue"),
-    ("I could stare like watching stars", 0.8, 0.06, "cyan"),
+    ("Your morning eyes", 0.9, 0.05, "blue"),
+    ("I could stare like watching stars", 2.0, 0.10, "cyan"),
     ("I could walk you by", 0.6, 0.05, "blue"),
     ("and I'll tell without a thought", 0.7, 0.06, "cyan"),
     ("You'd be mine", 0.5, 0.04, "blue"),
