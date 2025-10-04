@@ -39,14 +39,11 @@ lyrics = [
     ("(eh y-yeh y-yeh huh)", 0.3, 0.06, "red"),
 ]
 
-
+                                                                                       
 def main():
     setup()
 
     try:
-        # Hiển thị tiêu đề
-        display("  ")
-        print()
 
         for line in lyrics:
             display(*line)
