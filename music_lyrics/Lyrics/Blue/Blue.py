@@ -8,13 +8,11 @@ COLORS = {
     "reset": "\033[0m",
 }
 
-
 def setup():
     pass
-
-
 def color_text(text, color="blue"):
     return COLORS.get(color, COLORS["blue"]) + text + COLORS["reset"]
+
 
 
 def display(text, delay_after=0, char_speed=0.05, color="blue"):
@@ -42,9 +40,16 @@ lyrics = [
 
 
 def main():
+
     setup()
 
+    print(color_text("      BLUE ♪"))
+
+    print()
+    time.sleep(1)
+
     try:
+
         for line in lyrics:
             display(*line)
         print("\nHoàn thành! ")
