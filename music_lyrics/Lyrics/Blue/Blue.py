@@ -13,8 +13,8 @@ def print_lyrics():
         ("You'd be mine", 2.0),
         ("Would you mind ", 1.9),
         ("If I took your hand tonight?", 3.6),
-        ("Know you're all that I want ", 4.2),
-        ("This life", 3.7),
+        ("Know you're all ", 4.2),
+        ("That I want this life", 3.7),
         ("I'll imagine we fell in love", 2.9),
         ("I'll nap under moonlight skies with you", 3.8),
     ]
