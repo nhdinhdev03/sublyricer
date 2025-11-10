@@ -39,7 +39,6 @@ lyrics = [
     ("(eh y-yeh y-yeh huh)", 0.3, 0.06, "red"),
 ]
 
-                                                                                       
 def main():
     setup()
 
