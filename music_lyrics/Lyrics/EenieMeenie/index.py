@@ -34,7 +34,7 @@ def type_out(text: str, char_delay: float = CHAR_DELAY) -> None:
 
 
 def sing(
-    # ssssssss
+    
     line: str,
     before: float = 0.0,
     after: float = 0.0,
