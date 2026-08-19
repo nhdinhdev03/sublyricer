@@ -17,21 +17,6 @@ try:
 except Exception:
     pass
 
-# Màu (nếu có)
-try:
-    from termcolor import colored
-    from colorama import init as colorama_init
-
-    colorama_init()
-
-    def paint(t: str) -> str:
-        return colored(t, "cyan")
-
-except Exception:
-
-    def paint(t: str) -> str:
-        return t
-
 
 # Thông số mặc định
 CHAR_DELAY = 0
@@ -41,7 +26,7 @@ LEAD_IN = 0
 def type_out(text: str, char_delay: float = CHAR_DELAY) -> None:
 
     for ch in text:
-        sys.stdout.write(paint(ch))
+        sys.stdout.write(ch)
         sys.stdout.flush()
         time.sleep(char_delay)
     sys.stdout.write("\n")
@@ -69,16 +54,20 @@ def sing(
 
 
 lines = [
-    ("Once I was seven years old, my mama told me", 0.5, 0.5, 3.6),
-    ('"Go make yourself some friends, or you\'ll be lonely"', 0.10, 0.10, 3.1),
-    ("Once I was seven years old", 0.10, 5.60, 2.8),
-    ("It was a big, big world, but we thought we were bigger", 0.10, 0.10, 4.1),
-    ("Pushin' each other to the limits, we were learnin' quicker", 0.10, 0.10, 3.7),
-    ("By 11, smokin' herb and drinkin' burnin' liquor", 0.10, 0.10, 3.8),
-    ("Never rich, so we were out to make that steady figure", 0.10, 0.10, 3.7),
-    ("Once I was 11 years old, my daddy told me", 0.10, 0.10, 3.5),
-    ('"Go get yourself a wife, or you\'ll be lonely"', 0.10, 0.10, 3.3),
-    ("Once I was 11 years old", 0.3, 3.7, 3.0),
+    ("I like you, but...", 0.1, 0.3, 1.8),
+    ("You seem like the type to love 'em and leave 'em", 2.0, 0.6, 5.3),
+    ("And disappear right after the song", 0.2, 0.1, 2.9),
+    ("So give me the night", 0.8, 1.0, 2.0),
+    ("To show you, and hold you", 0.2, 0.5, 2.0),
+    ("Don't leave me out here dancin' alone", 0.2, 0.3, 3.5),
+    ("Can't make up your mind, mind, mind, mind, mind", 0.2, 1.0, 3.2),
+    ("Please don't waste my time, time, time, time, time", 0.2, 0.5, 3.8),
+    ("Not tryin' to rewind, wind, wind, wind, wind, wind", 0.9, 0.5, 4.0),
+    ("I wish our hearts could come together as one", 0.2, 0.7, 3.7),
+    ("Shawty yeah is an eenie meenie miney mo lover", 0.2, 0.5, 3.8),
+    ("Shawty is an eenie meenie miney mo lover ", 0.9, 0.1, 4.0),
+    ("Shawty is an eenie meenie miney mo lover", 0.9, 0.2, 4.2),
+    ("Shawty is an eenie meenie miney mo lover", 0.12, 0.1, 4.5),
 ]
 
 try:
@@ -94,14 +83,3 @@ try:
 finally:
     sys.stdout.write("\x1b[?25h")
     sys.stdout.flush()
-
-
-
-
-
-
-
-
-
-
-
