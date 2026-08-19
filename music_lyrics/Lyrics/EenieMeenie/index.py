@@ -32,7 +32,7 @@ def type_out(text: str, char_delay: float = CHAR_DELAY) -> None:
     sys.stdout.write("\n")
     sys.stdout.flush()
 
-# nhdinh
+
 def sing(
     
     line: str,
